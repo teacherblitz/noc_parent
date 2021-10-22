@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: cloud-integral
+  cloud:
+    # 服务注册与发现配置
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+
+# 服务端口及访问路径配置
+server:
+  port: 9002
+  servlet:
+    context-path: /cloud-integral
+
+# actuator配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+# openfeign配置
+feign:
+  client:
+    config:
+      # 指定某个服务的超时时间配置（毫秒）
+      cloud-order:
+        connectTimeout: 1000
+        readTimeout: 1000
+      # 默认超时时间配置（毫秒）
+      default:
+        connectTimeout: 1000
+        readTimeout: 1000

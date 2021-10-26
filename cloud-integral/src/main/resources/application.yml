@@ -35,5 +35,8 @@ feign:
         readTimeout: 1000
       # 默认超时时间配置（毫秒）
       default:
-        connectTimeout: 1000
-        readTimeout: 1000
+        connectTimeout: 5000
+        readTimeout: 10000
+  # 熔断器
+  circuitbreaker:
+    enabled: true

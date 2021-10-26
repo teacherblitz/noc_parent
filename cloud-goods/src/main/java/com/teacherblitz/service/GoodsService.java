@@ -5,19 +5,12 @@ import com.teacherblitz.entity.dto.GoodsDTO;
 import java.util.List;
 
 /**
- * 积分服务接口
+ * 商品模块 服务
  *
  * @author: <a href="mailto:teacherblitz@gmail.com">Teacher</a>
- * @since: 2021/9/29
+ * @since: 2021/10/26
  */
-public interface IntegralService {
-
-    /**
-     * 添加积分分润
-     * @param orderNo   订单号
-     * @return          success/error
-     */
-    String addOrderProfit(String orderNo);
+public interface GoodsService {
 
     /**
      * 获取商品列表

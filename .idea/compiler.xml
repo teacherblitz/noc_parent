@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-order" />
         <module name="cloud-entity" />
+        <module name="cloud-utils" />
         <module name="cloud-goods" />
         <module name="cloud-integral" />
       </profile>

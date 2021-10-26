@@ -13,6 +13,7 @@
     <module>cloud-order</module>
       <module>cloud-entity</module>
       <module>cloud-integral</module>
+      <module>cloud-utils</module>
   </modules>
 
   <name>noc_parent</name>
